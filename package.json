@@ -12,6 +12,9 @@
         ]
     },
     "scripts": {
-        "db": "yarn workspace db"
+        "api": "yarn workspace api",
+        "db": "yarn workspace db",
+        "backend:start": "yarn workspace db up & yarn workspace api start",
+        "backend:stop": "yarn workspace db down & yarn workspace api down"
     }
 }
